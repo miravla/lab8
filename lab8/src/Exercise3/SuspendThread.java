@@ -57,7 +57,7 @@ public class SuspendThread implements Runnable {
 			try {
 				//display message if thread is suspending
 				if (isRunning == true) {
-					System.out.println("\n\n" + threadName + " is suspending for 5 seconds" + "\n\n");
+					System.out.println("The" + threadName + " is suspending for 5 seconds" + "\n\n");
 					
 					//set timer to 5 s
 					Thread.sleep(5000);
