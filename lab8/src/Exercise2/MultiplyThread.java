@@ -7,11 +7,8 @@ import java.util.Set;
 
 public class MultiplyThread implements Runnable{
 
-	
-	/**
-	 * This method rearrange sequence of sentence
-	 * Thread: word1
-	 */
+	// rearrange sentence in random
+	 
 	private void rearrangeSentence() {
 		Random random = new Random();
 		String randomArrange[]={ "it","is","recommended","to","use","Calendar","class"};
@@ -32,15 +29,12 @@ public class MultiplyThread implements Runnable{
 		System.out.println(newSentence);
 	}
 	
-	/**
-	 * extract characters from text
-	 * Thread: word1
-	 */
+	//take out the word 1 by 1 in text
 	private void extractString() {
 		String text = "Nezuko Is super Cute";
-		for(int counter = 0; counter < 20; counter++) {
-			String subString = text.substring(0, counter + 1);
-			System.out.println(subString);
+		for(int j = 0; j < 20; j++) {
+			String subText = text.substring(0, j + 1);
+			System.out.println(subText);
 		}
 	}
 	
